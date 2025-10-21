@@ -1,0 +1,7 @@
+header{
+        color: white;
+}
+
+header>h1{
+    padding-left: 15px;
+}
