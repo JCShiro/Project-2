@@ -1,35 +1,37 @@
-body{
+body {
     /* Custom font to use on all */
     font-family: "Dancing Script", cursive;
     font-optical-sizing: 50px;
     font-weight: auto;
     font-style: normal
 }
-header{
-        color: white;
+
+header {
+    color: white;
 }
 
-header>h1{
+header>h1 {
     padding-left: 15px;
 }
 
-h4{
-    font-size: 20px;;
+h4 {
+    font-size: 20px;
+    ;
 }
 
 #current-time {
-    padding-right: 100px;
+    padding-right: 10px;
 }
 
 #total-time {
-    padding-left: 90px;
+    padding-left: 10px;
 }
 
 #pause-play-button {
     height: 80px;
     width: auto;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #skip-forward-button {

@@ -1,10 +1,11 @@
 /* Standard reset, sets margin and padding to 0 */
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* Full webpage changes */
-body{
+body {
     /* Sets the background color */
     background-color: #7DD0D2;
     /* Controls the width of the site */
@@ -13,19 +14,21 @@ body{
     /* Creates a gap between the edges of the page and the content */
     margin: 2em auto;
 }
+
 /* What holds the content */
-.container{
+.container {
     /* How the content is layed out */
     display: grid;
     /* How many columns there are */
-    grid-template-columns: repeat(5,2fr);
+    grid-template-columns: repeat(5, 2fr);
     /* Gap between separate boxes */
     gap: 15px;
     /* row height controls */
     grid-auto-rows: 100px;
 }
+
 /* style edits for header */
-header{
+header {
     /* Curved border */
     border-radius: 10px;
     padding: 10px;
@@ -39,8 +42,9 @@ header{
     align-items: center;
     justify-content: center;
 }
+
 /* style edits for all boxes on grid */
-.container>article{
+.container>article {
     /* Curved border */
     border-radius: 4px;
     /* border styles */
@@ -48,19 +52,38 @@ header{
     padding: 10px;
     background-color: cadetblue;
 }
+
 /* Style options for the songlist article */
 #songlist {
     grid-column: 1/6;
     grid-row: 2/9;
 }
+
 /* style options for the controls section */
 #controls {
     grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#skip-back-button-div {
+    grid-column: 1/2;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
+
+#pause-play-button-div {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+}
+
+#skip-forward-button-div {
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+}
+
 /* style options for the timer box */
 #time-box {
     grid-column: 1/6;
@@ -69,8 +92,9 @@ header{
     align-items: center;
     justify-content: center;
 }
+
 /* Styles for the seek bar */
-#seek-bar{
+#seek-bar {
     /*I hate commas, they caused my slider width to break cause i put 1,500px and it didn't like it */
     width: 1500px;
     height: 25px;

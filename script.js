@@ -1,4 +1,4 @@
-console.log("This text means javascript is working!!")
+console.log("This text means the javascript is working!!")
 
 
 /**
@@ -9,7 +9,7 @@ console.log("This text means javascript is working!!")
 function formatTime(secs) {
     let hours = Math.floor(secs / 3600);
     let minutes = Math.floor((secs - (hours * 3600)) / 60);
-    if (hours < 10){
+    if (hours < 10) {
         hours = "0" + hours;
     }
     if (seconds < 10) {
@@ -20,7 +20,7 @@ function formatTime(secs) {
             minutes = "0" + minutes
         }
         return hours + ":" + minutes + ":" + seconds;
-    } else  {
+    } else {
         return minutes + ":" + seconds;
     }
 }
