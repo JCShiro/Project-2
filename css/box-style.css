@@ -13,7 +13,7 @@ body{
 .container{
     /* background-color: aquamarine; */
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5,2fr);
     gap: 15px;
     grid-auto-rows: 2fr;
 }
@@ -22,7 +22,7 @@ header{
     border-radius: 4px;
     padding: 10px;
     background-color: black;
-    grid-column: 1/3;
+    grid-column: 1/6;
     display: flex;
     flex-direction: row;
     align-items: center;
