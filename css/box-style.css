@@ -1,38 +1,78 @@
+/* Standard reset, sets margin and padding to 0 */
 *{
     margin: 0;
     padding: 0;
 }
-
+/* Full webpage changes */
 body{
+    /* Sets the background color */
     background-color: #7DD0D2;
+    /* Controls the width of the site */
     max-width: auto;
     width: 90%;
+    /* Creates a gap between the edges of the page and the content */
     margin: 2em auto;
 }
-
+/* What holds the content */
 .container{
-    /* background-color: aquamarine; */
+    /* How the content is layed out */
     display: grid;
+    /* How many columns there are */
     grid-template-columns: repeat(5,2fr);
+    /* Gap between separate boxes */
     gap: 15px;
-    grid-auto-rows: 2fr;
+    /* row height controls */
+    grid-auto-rows: 100px;
 }
-
+/* style edits for header */
 header{
-    border-radius: 4px;
+    /* Curved border */
+    border-radius: 10px;
     padding: 10px;
     background-color: black;
+    /* Sets header to span whole width */
+    grid-column: 1/6;
+    /* flex to organise items within */
+    display: flex;
+    flex-direction: row;
+    /* sets items to middle */
+    align-items: center;
+    justify-content: center;
+}
+/* style edits for all boxes on grid */
+.container>article{
+    /* Curved border */
+    border-radius: 4px;
+    /* border styles */
+    border: 2px dashed black;
+    padding: 10px;
+    background-color: cadetblue;
+}
+/* Style options for the songlist article */
+#songlist {
+    grid-column: 1/6;
+    grid-row: 2/9;
+}
+/* style options for the controls section */
+#controls {
+    grid-column: 2/5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+/* style options for the timer box */
+#time-box {
     grid-column: 1/6;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
-.container>article{
-    border-radius: 4px;
-    padding: 10px;
-    background-color: cadetblue;
-    border: 2px dashed black;
+/* Styles for the seek bar */
+#seek-bar{
+    /*I hate commas, they caused my slider width to break cause i put 1,500px and it didn't like it */
+    width: 1500px;
+    height: 25px;
+    accent-color: black;
 }
-

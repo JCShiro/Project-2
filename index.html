@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/box-style.css">
-    <link rel="stylesheet" href="css/text-style.css">
+    <link rel="stylesheet" href="css/other-style.css">
     <script src="script.js" defer></script>
-    <title>Document</title>
+    <title>Jacob's Epic Player</title>
+    <!-- Custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+US+Modern:wght@100..400&display=swap"
+        rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
-            <p>image</p><h1>Epic Player</h1>
+            <p>image</p><h1>Jacob's Epic Player</h1>
         </header>
-        <article></article>
+        <article id="songlist">
+            
+        </article>
+        <article id="controls">
+            <img id="skip-back-button" src="images/skip back.svg">
+            <img id="pause-play-button" src="images/play.svg">
+            <img id="skip-forward-button" src="images/skip.svg">
+        </article>
+        <article id="time-box">
+            <h4 id="current-time">0:00</h4>
+            <input id="seek-bar" type="range" min="0" value="0">
+            <h4 id="total-time">0:00</h4>
+        </article>
     </div>
 </body>
 </html>
