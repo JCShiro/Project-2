@@ -12,9 +12,11 @@ const totalTime = document.getElementById("total-time");
 //get a reference to the seek bar
 const seekBar = document.getElementById("seek-bar");
 //audio object to manage loading and playback
-const myAudio = new Audio("audio/Open-Arms.mp3")
+const myAudio = new Audio("audio/Open-Arms.mp3");
 //store if the user is interacting with the bar
 let isSeeking = false;
+//get a reference for the volume bar
+const soundBar = document.getElementbyId("volume-bar");
 //LISTENERS
 //listen for an audio load event
 myAudio.onloadedmetadata = () => {
@@ -54,6 +56,12 @@ myAudio.ontimeupdate = () =>{
 seekBar.onchange = () =>{
     myAudio.currentTime = seekBar.value
 }
+
+soundBar.on
+
+
+
+
 
 /**
  * This formatTime function will format time from seonds to a readable time

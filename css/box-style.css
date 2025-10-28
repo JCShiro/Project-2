@@ -104,3 +104,13 @@ header {
     height: 25px;
     accent-color: black;
 }
+
+#volume-control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#volume-bar{
+    width: 300px;
+    accent-color: black;
+}
