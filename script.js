@@ -6,6 +6,8 @@ const playButton = document.getElementById("pause-play-button");
 const skipBackButton = document.getElementById("skip-back-button")
 //get a reference for the skip forward button
 const skipForwardButton = document.getElementById("skip-forward-button");
+//get a reference for the volume bar
+const soundBar = document.getElementById("volume-bar");
 //get a reference to the text elements
 const trackTime = document.getElementById("current-time");
 const totalTime = document.getElementById("total-time");
@@ -15,8 +17,7 @@ const seekBar = document.getElementById("seek-bar");
 const myAudio = new Audio("audio/Open-Arms.mp3");
 //store if the user is interacting with the bar
 let isSeeking = false;
-//get a reference for the volume bar
-const soundBar = document.getElementbyId("volume-bar");
+
 //LISTENERS
 //listen for an audio load event
 myAudio.onloadedmetadata = () => {
@@ -57,11 +58,7 @@ seekBar.onchange = () =>{
     myAudio.currentTime = seekBar.value
 }
 
-soundBar.on
-
-
-
-
+soundBar
 
 /**
  * This formatTime function will format time from seonds to a readable time
