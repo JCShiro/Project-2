@@ -10,9 +10,9 @@ const skipForwardButton = document.getElementById("skip-forward-button");
 const trackTime = document.getElementById("current-time");
 const totalTime = document.getElementById("total-time");
 //get a reference to the seek bar
-const seekBar = document.getElementById("Seek-bar");
+const seekBar = document.getElementById("seek-bar");
 //audio object to manage loading and playback
-const myAudio = new Audio("audio/Open-Arms.webm")
+const myAudio = new Audio("audio/Open-Arms.mp3")
 //store if the user is interacting with the bar
 let isSeeking = false;
 //LISTENERS
@@ -49,6 +49,10 @@ myAudio.ontimeupdate = () =>{
     if(isSeeking == false){
         seekBar.value = Math.floor(myAudio.currentTime);
     }
+}
+
+seekBar.onchange = () =>{
+    myAudio.currentTime = seekBar.value
 }
 
 /**
