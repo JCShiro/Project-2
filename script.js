@@ -11,6 +11,8 @@ const soundBar = document.getElementById("volume-bar");
 //get a reference to the text elements
 const trackTime = document.getElementById("current-time");
 const totalTime = document.getElementById("total-time");
+//get a reference for clicking a track
+const trackBtn = document.getElementById("open-arms")
 //get a reference to the seek bar
 const seekBar = document.getElementById("seek-bar");
 //audio object to manage loading and playback
@@ -67,6 +69,20 @@ soundBar.oninput = () =>{
 
     volumeTracker = soundBar.value/100;
 }
+
+//ARRAY of all song data
+const songs = [
+    //Open arms
+    ["/images/song-covers/Troy_Saga.jpg","/audio/Open-Arms.mp3","Open Arms"]
+    //Remember Them
+    ["/images/song-covers/Cyclops_Saga.jpg","/audio/Remember-Them.mp3","Remember Them"]
+]
+
+trackBtn.onclick = () =>{
+    console.log ("clicked!");
+}
+
+
 
 /**
  * This formatTime function will format time from seonds to a readable time

@@ -49,6 +49,7 @@ h4 {
     align-items: center;
     justify-content: center;
     font-size: 25px;
+    gap: 20px;
 }
 
 img {
@@ -74,7 +75,7 @@ section:hover{
     background-color: rgb(74, 123, 124);
 }
 
-#title-img{
+#title-img, #current-song-img{
     width: 90px;
     height: auto;
 }
