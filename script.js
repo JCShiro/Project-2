@@ -11,8 +11,6 @@ const soundBar = document.getElementById("volume-bar");
 //get a reference to the text elements
 const trackTime = document.getElementById("current-time");
 const totalTime = document.getElementById("total-time");
-//get a reference for clicking a track
-const trackBtn = document.getElementById("open-arms")
 //get a reference to the seek bar
 const seekBar = document.getElementById("seek-bar");
 //audio object to manage loading and playback
@@ -32,7 +30,7 @@ myAudio.onloadedmetadata = () => {
     //set the bar to 0
     seekBar.value = 0;
     //set the volume to max
-    soundBar.value = 1
+    soundBar.value = 100;
 }
 //when the play button is clicked, play or pause the audio according to the state
 playButton.onclick = () =>{
@@ -57,9 +55,19 @@ myAudio.ontimeupdate = () =>{
         seekBar.value = Math.floor(myAudio.currentTime);
     }
 }
-
+//when user interacts with the seekbar
+seekBar.oninput = () =>{
+    isSeeking = true
+}
+//on seekbar change, update time
 seekBar.onchange = () =>{
     myAudio.currentTime = seekBar.value
+    //if the audio is playing, change after interaction
+    if(myAudio.paused == false){
+        myAudio.play();
+    }
+    //set isSeeking to false
+    isSeeking = false
 }
 
 soundBar.oninput = () =>{
@@ -73,14 +81,26 @@ soundBar.oninput = () =>{
 //ARRAY of all song data
 const songs = [
     //Open arms
-    ["/images/song-covers/Troy_Saga.jpg","/audio/Open-Arms.mp3","Open Arms"]
+    ["/images/song-covers/Troy_Saga.jpg","/audio/Open-Arms.mp3","Open Arms"],
     //Remember Them
-    ["/images/song-covers/Cyclops_Saga.jpg","/audio/Remember-Them.mp3","Remember Them"]
+    ["/images/song-covers/Cyclops_Saga.jpg","/audio/Remember-Them.mp3","Remember Them"],
+    //Ruthlessness
+    ["/images/song-covers/The_ocean_saga2.jpg","/audio/Ruthlessness.mp3","Ruthlessness"],
+    //Would'nt you like
+    ["/images/song-covers/The_Circe_Saga.jpg","/audio/Wouldn't-You-Like.mp3","Would'nt you like"],
+    //Monster
+    ["/images/song-covers/Underworld_Saga.jpg","/audio/Monster.mp3","Monster"],
+    //Scylla
+    ["/images/song-covers/Thunder_Saga.jpg","/audio/Scylla.mp3","Scylla"],
+    //Legendary
+    ["/images/song-covers/Wisdom_Saga.jpg","/audio/Legendary.mp3","Legendary"],
+    //Dangerous
+    ["/images/song-covers/Vengeance_Saga.jpg","/audio/Dangerous.mp3","Dangerous"],
+    //Odysseus
+    ["/images/song-covers/Ithica_Saga.jpg","/audio/Odysseus.mp3","Odysseus"],
 ]
 
-trackBtn.onclick = () =>{
-    console.log ("clicked!");
-}
+
 
 
 
