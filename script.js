@@ -29,6 +29,8 @@ myAudio.onloadedmetadata = () => {
     seekBar.max = Math.floor(myAudio.duration);
     //set the bar to 0
     seekBar.value = 0;
+    //set the volume to max
+    soundBar.value = 1
 }
 //when the play button is clicked, play or pause the audio according to the state
 playButton.onclick = () =>{
@@ -58,7 +60,13 @@ seekBar.onchange = () =>{
     myAudio.currentTime = seekBar.value
 }
 
-soundBar
+soundBar.onchange = () =>{
+    if (myAudio){
+        myAudio.volume = soundBar.value / 100;
+    }
+
+    volumeTracker = soundBar.value/100;
+}
 
 /**
  * This formatTime function will format time from seonds to a readable time
