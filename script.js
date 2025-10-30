@@ -60,7 +60,7 @@ seekBar.onchange = () =>{
     myAudio.currentTime = seekBar.value
 }
 
-soundBar.onchange = () =>{
+soundBar.oninput = () =>{
     if (myAudio){
         myAudio.volume = soundBar.value / 100;
     }
