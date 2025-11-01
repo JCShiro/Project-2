@@ -18,6 +18,26 @@ const myAudio = new Audio("audio/Open-Arms.mp3");
 //store if the user is interacting with the bar
 let isSeeking = false;
 
+//SONG SELECTORS
+//get a reference for open arms
+const openArmsBtn = document.getElementById("open-arms");
+//get a reference for remember them
+const rememberThemBtn = document.getElementById("remember-them");
+//get a reference for ruthlessness
+const ruthlessnessBtn = document.getElementById("ruthlessness");
+//get a refenence for wouldn't you like
+const wouldntYouLikeBtn = document.getElementById("wouldn't-you-like");
+//get a reference for monster
+const monsterBtn = document.getElementById("monster");
+//get a reference for scylla
+const scyllaBtn = document.getElementById("scylla");
+//get a refence for legendary
+const legendaryBtn = document.getElementById("legendary");
+//get a reference for dangerous
+const dangerousBtn = document.getElementById("dangerous");
+//get a reference for odysseus
+const odysseusBtn = document.getElementById("odysseus");
+
 //LISTENERS
 //listen for an audio load event
 myAudio.onloadedmetadata = () => {
@@ -100,7 +120,9 @@ const songs = [
     ["/images/song-covers/Ithica_Saga.jpg","/audio/Odysseus.mp3","Odysseus"],
 ]
 
-
+openArmsBtn.onclick = () =>{
+    
+}
 
 
 
