@@ -14,7 +14,7 @@ const totalTime = document.getElementById("total-time");
 //get a reference to the seek bar
 const seekBar = document.getElementById("seek-bar");
 //audio object to manage loading and playback
-const myAudio = new Audio("audio/Open-Arms.mp3");
+let myAudio = new Audio("audio/Open-Arms.mp3");
 //store if the user is interacting with the bar
 let isSeeking = false;
 
@@ -121,7 +121,11 @@ const songs = [
 ]
 
 openArmsBtn.onclick = () =>{
-    
+
+}
+
+rememberThemBtn.onclick = () =>{
+
 }
 
 
