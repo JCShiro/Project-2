@@ -38,6 +38,19 @@ const dangerousBtn = document.getElementById("dangerous");
 //get a reference for odysseus
 const odysseusBtn = document.getElementById("odysseus");
 
+//SWITCHES
+openArmsBtn.onclick = () =>{
+    myAudio.pause = true;
+    trackTime.innerHTML = formatTime(0);
+    myAudio = new Audio("/audio/Open-Arms.mp3")
+}
+
+rememberThemBtn.onclick = () =>{
+    myAudio.pause = true;
+    trackTime.innerHTML = formatTime(0);
+    myAudio = new Audio("/audio/Remember-Them.mp3");
+}
+
 //LISTENERS
 //listen for an audio load event
 myAudio.onloadedmetadata = () => {
@@ -120,13 +133,6 @@ const songs = [
     ["/images/song-covers/Ithica_Saga.jpg","/audio/Odysseus.mp3","Odysseus"],
 ]
 
-openArmsBtn.onclick = () =>{
-
-}
-
-rememberThemBtn.onclick = () =>{
-
-}
 
 
 
