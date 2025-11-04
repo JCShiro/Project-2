@@ -1,4 +1,4 @@
-console.log("This text means the javascript is working!!");
+console.log("This text means the javascript is loaded!!");
 //GLOBAL VARIABLES
 //ARRAY of all song data
 const songs = [

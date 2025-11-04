@@ -125,7 +125,7 @@ header {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 3000px) {
   #songlist {
     grid-row: 2/10;
   }
