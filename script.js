@@ -81,25 +81,25 @@ const currentSongImg = document.getElementById("current-song-img");
 //get a reference for the current song name
 const currentSongName = document.getElementById("song-name-text");
 
-//SONG SELECTORS
-//get a reference for open arms
-const openArmsBtn = document.getElementById("open-arms");
-//get a reference for remember them
-const rememberThemBtn = document.getElementById("remember-them");
-//get a reference for ruthlessness
-const ruthlessnessBtn = document.getElementById("ruthlessness");
-//get a refenence for wouldn't you like
-const wouldntYouLikeBtn = document.getElementById("wouldn't-you-like");
-//get a reference for monster
-const monsterBtn = document.getElementById("monster");
-//get a reference for scylla
-const scyllaBtn = document.getElementById("scylla");
-//get a refence for legendary
-const legendaryBtn = document.getElementById("legendary");
-//get a reference for dangerous
-const dangerousBtn = document.getElementById("dangerous");
-//get a reference for odysseus
-const odysseusBtn = document.getElementById("odysseus");
+// //SONG SELECTORS -------> NOT NEEDED NOW
+// //get a reference for open arms
+// const openArmsBtn = document.getElementById("open-arms");
+// //get a reference for remember them
+// const rememberThemBtn = document.getElementById("remember-them");
+// //get a reference for ruthlessness
+// const ruthlessnessBtn = document.getElementById("ruthlessness");
+// //get a refenence for wouldn't you like
+// const wouldntYouLikeBtn = document.getElementById("wouldn't-you-like");
+// //get a reference for monster
+// const monsterBtn = document.getElementById("monster");
+// //get a reference for scylla
+// const scyllaBtn = document.getElementById("scylla");
+// //get a refence for legendary
+// const legendaryBtn = document.getElementById("legendary");
+// //get a reference for dangerous
+// const dangerousBtn = document.getElementById("dangerous");
+// //get a reference for odysseus
+// const odysseusBtn = document.getElementById("odysseus");
 
 //LISTENERS
 const trackBtns = document.getElementsByClassName("trackBtn");
